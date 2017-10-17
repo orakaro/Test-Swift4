@@ -7,19 +7,19 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import Action
 
 class ViewController: UIViewController {
 
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        _ = Action<Int, Int> { _ in
+            return Observable.from([1,2,3,4,5])
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
