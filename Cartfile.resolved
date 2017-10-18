@@ -1,2 +1,2 @@
-github "ReactiveX/RxSwift" "4.0.0-rc.0"
-github "RxSwiftCommunity/Action" "ee52caff1f9182291eda33d295096075af328088"
+github "ReactiveX/RxSwift" "4.0.0"
+github "RxSwiftCommunity/Action" "3.4.0"
