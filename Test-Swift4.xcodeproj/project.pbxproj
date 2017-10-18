@@ -12,32 +12,10 @@
 		88BDC3361F9602A500D9BAE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BDC3341F9602A500D9BAE8 /* Main.storyboard */; };
 		88BDC3381F9602A500D9BAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88BDC3371F9602A500D9BAE8 /* Assets.xcassets */; };
 		88BDC33B1F9602A500D9BAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BDC3391F9602A500D9BAE8 /* LaunchScreen.storyboard */; };
-		88BDC3571F960B9400D9BAE8 /* Action.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3461F96096300D9BAE8 /* Action.framework */; };
-		88BDC3581F960B9400D9BAE8 /* Action.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3461F96096300D9BAE8 /* Action.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		88BDC3591F960B9400D9BAE8 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3431F96096300D9BAE8 /* RxBlocking.framework */; };
-		88BDC35A1F960B9400D9BAE8 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3431F96096300D9BAE8 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		88BDC35B1F960B9400D9BAE8 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3441F96096300D9BAE8 /* RxCocoa.framework */; };
-		88BDC35C1F960B9400D9BAE8 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3441F96096300D9BAE8 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		88BDC35D1F960B9400D9BAE8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3451F96096300D9BAE8 /* RxSwift.framework */; };
-		88BDC35E1F960B9400D9BAE8 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3451F96096300D9BAE8 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88FB52681F987D8C007AD79B /* Action.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3461F96096300D9BAE8 /* Action.framework */; };
+		88FB52691F987D8C007AD79B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3441F96096300D9BAE8 /* RxCocoa.framework */; };
+		88FB526A1F987D8C007AD79B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BDC3451F96096300D9BAE8 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		88BDC3611F960B9400D9BAE8 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				88BDC35E1F960B9400D9BAE8 /* RxSwift.framework in Embed Frameworks */,
-				88BDC35C1F960B9400D9BAE8 /* RxCocoa.framework in Embed Frameworks */,
-				88BDC3581F960B9400D9BAE8 /* Action.framework in Embed Frameworks */,
-				88BDC35A1F960B9400D9BAE8 /* RxBlocking.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		88BDC32D1F9602A500D9BAE8 /* Test-Swift4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test-Swift4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,10 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88BDC35D1F960B9400D9BAE8 /* RxSwift.framework in Frameworks */,
-				88BDC35B1F960B9400D9BAE8 /* RxCocoa.framework in Frameworks */,
-				88BDC3571F960B9400D9BAE8 /* Action.framework in Frameworks */,
-				88BDC3591F960B9400D9BAE8 /* RxBlocking.framework in Frameworks */,
+				88FB526A1F987D8C007AD79B /* RxSwift.framework in Frameworks */,
+				88FB52691F987D8C007AD79B /* RxCocoa.framework in Frameworks */,
+				88FB52681F987D8C007AD79B /* Action.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,8 +102,7 @@
 				88BDC3291F9602A500D9BAE8 /* Sources */,
 				88BDC32A1F9602A500D9BAE8 /* Frameworks */,
 				88BDC32B1F9602A500D9BAE8 /* Resources */,
-				88BDC34D1F96097B00D9BAE8 /* ShellScript */,
-				88BDC3611F960B9400D9BAE8 /* Embed Frameworks */,
+				88FB526B1F987DAA007AD79B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -185,22 +161,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		88BDC34D1F96097B00D9BAE8 /* ShellScript */ = {
+		88FB526B1F987DAA007AD79B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework\n$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework\n$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework\n$(SRCROOT)/Carthage/Build/iOS/RxTest.framework\n$(SRCROOT)/Carthage/Build/iOS/Action.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Action.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Action.framework",
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
